@@ -602,6 +602,7 @@ type HTTPRetry struct {
 
 	// Timeout per retry attempt for a given request. format: 1h/1m/1s/1ms. MUST BE >=1ms.
 	PerTryTimeout string `json:"perTryTimeout"`
+	RetryOn       string `json:"retryOn,omitempty"`
 }
 
 // Describes the Cross-Origin Resource Sharing (CORS) policy, for a given
